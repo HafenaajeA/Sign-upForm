@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/odin-logopng" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <section id="LoginContent">
+      <form
+        id="Login_form"
+        action="/login"
+        method="POST"
+        enctype="application/x-www-form-urlencoded"
+      >
+        <div class="login">
+          <div class="SaavHeader">
+            <h3>Login</h3>
+            <p>Welcome to Site_code</p>
+          </div>
+          <div class="login_title">
+            <span>Log in to access the system</span>
+          </div>
+          <div class="login_fields">
+            <div class="login_fields_user">
+              <div class="icon">
+                <img
+                  src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png"
+                  alt="login-icon"
+                />
+              </div>
+              <input
+                placeholder="email"
+                name="email"
+                type="text"
+                id="Userioinput"
+              />
+              <div class="validation">
+                <img
+                  src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="login_fields__password">
+              <div class="icon">
+                <img
+                  src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png"
+                  alt=""
+                />
+              </div>
+              <input
+                placeholder="password"
+                name="password"
+                id="SenhaInput"
+                type="password"
+              />
+              <div class="validation">
+                <img
+                  src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="login_fields__submit">
+              <input type="submit" id="loginButton" value="Log In" />
+              <div class="forgot">
+                <a href="/forgot">Forgot password?</a>
+              </div>
+            </div>
+          </div>
+          <div class="feedback success">
+            <h2>Approved credentials</h2>
+            <p>Welcome to Site_code</p>
+          </div>
+          <div class="feedback error" id="error">
+            <h2>an error occurred. Please try again</h2>
+            <p>You might be drunk!!!</p>
+          </div>
+          <div class="disclaimer">
+            <p>
+              Take care of your password, don't tell anyone to avoid theft and
+              fraud. All right reserved to Sitecode Namibia
+            </p>
+          </div>
+        </div>
+      </form>
+      <div class="Authent">
+        <img
+          src="https://image.ibb.co/mco6FL/logo-mini.png"
+          class="logoAuthenticacao"
+        />
+        <img
+          src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg"
+          alt=""
+        />
+        <p>Authenticating...</p>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+</html>
